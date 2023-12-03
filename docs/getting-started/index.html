@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta itemprop="datePublished" content="2023-12-03T21:12:21+00:00" id="date">
+    <meta itemprop="dateModified" content="2023-12-03T21:12:21+00:00" id="last-modified">
+    <title>DateTime (DTT): Uncover Essential Installation Prerequisites</title>
+
+    <!-- # Start Primary Meta Tags -->
+    <meta content="Sebastien Rousseau" name="author"><meta content="Discover DateTime (DTT), a Rust library for efficient date-time parsing, validation, and formatting, tailored for accuracy and performance in software." name="description"><meta content="telephone=no" name="format-detection"><meta content="Shokunin 🦀 (version 0.0.20)" name="generator"><meta content="DateTime DTT, Rust library, date parsing, time formatting, Rust date-time, software development, Rust programming, ISO 8601, time manipulation, UTC timezone" name="keywords"><meta content="en-GB" name="language"><meta content="https://dttlib.one/getting-started/index.html" name="permalink"><meta content="general" name="rating"><meta content="no-referrer" name="referrer"><meta content="7 days" name="revisit-after"><meta content="index, follow" name="robots"><meta content="" name="theme-color"><meta content="DateTime (DTT): Uncover Essential Installation Prerequisites" name="title"><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- # End Primary Meta Tags -->
+
+    <!-- # Start Open Graph / Facebook Meta Tags -->
+    <meta name="og:description" content="Discover DateTime (DTT), a Rust library for efficient date-time parsing, validation, and formatting, tailored for accuracy and performance in software.">
+<meta name="og:image" content="https://kura.pro/dtt/images/logos/dtt.webp">
+<meta name="og:image:alt" content="Logo of DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times">
+<meta name="og:image:height" content="100vh">
+<meta name="og:image:width" content="100vw">
+<meta name="og:locale" content="en_GB">
+<meta name="og:title" content="DateTime (DTT): Uncover Essential Installation Prerequisites">
+<meta name="og:type" content="website">
+<meta name="og:url" content="https://dttlib.one/getting-started/index.html">
+    <!-- # End Open Graph / Facebook Meta Tags -->
+
+    <!-- # Start Accessibility Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <!-- # End Accessibility Meta Tags -->
+
+    <!-- # Start Apple Meta Tags -->
+    <meta content="portrait" name="apple_mobile_web_app_orientations"><meta content="192x192" name="apple_touch_icon_sizes"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-inset"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="DateTime (DTT): Uncover Essential Installation Prerequisites" name="apple-mobile-web-app-title"><meta content="yes" name="apple-touch-fullscreen">
+    <!-- # End Apple Meta Tags -->
+
+<!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
+  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
+  img-src 'self' data: https: kura.pro www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self';" />
+<!-- # End Content Security Policy Meta Tags -->
+
+
+
+    <!-- # Start Microsoft Meta Tags -->
+    <meta content="" name="msapplication-navbutton-color">
+    <!-- # End Microsoft Meta Tags -->
+
+    <!-- # Start Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@wwdseb">
+<meta name="twitter:description" content="Discover DateTime (DTT), a Rust library for efficient date-time parsing, validation, and formatting, tailored for accuracy and performance in software.">
+<meta name="twitter:image" content="https://kura.pro/dtt/images/logos/dtt.webp">
+<meta name="twitter:image:alt" content="Logo of DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times">
+<meta name="twitter:image:height" content="100vh">
+<meta name="twitter:image:width" content="100vw">
+<meta name="twitter:site" content="https://dttlib.one/getting-started/index.html">
+<meta name="twitter:title" content="DateTime (DTT): Uncover Essential Installation Prerequisites">
+<meta name="twitter:url" content="https://dttlib.one/getting-started/index.html">
+    <!-- # End Twitter Meta Tags -->
+
+    <!-- # Start Links -->
+    <link rel="alternate" href="https://dttlib.one/getting-started/index.html" hreflang="en" />
+    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/daniele-franchi-Vl6YuVBLEys.webp">
+    <link rel="canonical" href="https://dttlib.one/getting-started/index.html" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kura.pro/dtt/images/favicon.ico"
+      sizes="16x16 32x32"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kura.pro/dtt/images/icons/192x192.png"
+      sizes="192x192"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- # End Links -->
+
+    <!-- # Start Styles -->
+    <style>
+      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h5,h6{color:var(--theme-color)}:root{--theme-color:rgb(205,53,44)}*{font-weight:300}a{color:var(--theme-color);text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.btn-info{background-color:var(--theme-color) !important;border-color:var(--theme-color) !important}.text-info{color:var(--theme-color) !important}.zoom-out:hover{transform:scale(.618)}table{border:1px solid var(--theme-color);border-collapse:collapse;border-spacing:0;empty-cells:show;margin-bottom:26.18px;width:100%}td,th,thead{vertical-align:top}thead{background-color:var(--theme-color);color:#fff !important;font-size:22px;text-align:center;vertical-align:middle;border-bottom:1px solid black}td,th{background-color:transparent;border-left:1px solid var(--theme-color);border-width:0 0 0 1px;margin:0;overflow:visible;padding:6.18px 12px}.bg-dark{background-color:#141414 !important}
+    </style>
+    <!-- # End Styles -->
+  </head>
+  <body
+    aria-label="body"
+    id="page-top"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    class="bg-dark text-start text-light text-center"
+  >
+    <!-- # Start Responsive navbar -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top shadow-small navbar-dark bg-dark"
+      aria-label="navbar"
+      id="mainNav"
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+    >
+    <div class="container-xxl p-3">
+      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
+        <img
+          class="d-inline-block align-top"
+          width="44"
+          height="44"
+          src="https://kura.pro/dtt/images/logos/dtt.webp"
+          alt="Logo of DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times"
+          title="Logo of DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times"
+          loading="lazy"
+        />
+      </a>
+      <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="Getting Started - Discover DateTime (DTT), a Rust library for efficient date-time parsing, validation, and formatting, tailored for accuracy and performance in software." class="text-decoration-none text-white">Getting Started</a></span>
+      <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-white ms-auto mb-2 bg-transparent">
+            <li class="nav-item">
+              <a
+                class="nav-link text-info"
+                href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+              class="nav-link text-info"
+              href="/about/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/getting-started/index.html">Getting Started</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-info dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Resources</a>
+              <ul
+                class="dropdown-menu dropdown-menu-end border border-danger bg-white"
+                aria-labelledby="resourcesDropdown"
+              >
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/contribute/index.html">Contribute</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="https://github.com/sebastienrousseau/dtt" target="_blank">GitHub ⧉</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/made-with-shokunin/index.html">Made with Shokunin</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/tags/index.html">Tags</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="button btn btn-info rounded-pill text-white"
+                aria-current="page"
+                href="/contact/index.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- # End Responsive navbar -->
+
+    <!-- Main content-->
+    <main id="main" class="bd-masthead fs-5 p-5 bg-white text-black" aria-label="main">
+      <div class="text-start justify-content-between"><h1 id="h1-datetime" tabindex="0" itemprop="headline" id="" tabindex="0" itemprop="headline" class="datetime">DateTime (DTT): Uncover Essential Installation Prerequisites</h1><p>Discover DateTime (DTT), a Rust library for efficient date-time parsing, validation, and formatting, tailored for accuracy and performance in software.</p><p></p><p><img src="https://kura.pro/stock/images/banners/christoph-duschl-CE_TvPHF3lA.webp" alt="DateTime (DTT):  Setup and Usage Guide"  class="img-fluid fade-in p-3"/></p>
+<h2 id="h2-overview" tabindex="0" itemprop="subheadline" class="overview">Overview</h2>
+<p><code>DateTime (DTT)</code> is a versatile Rust library designed for parsing, validating, manipulating, and formatting dates and times. Tailored to modern software development needs, <code>DTT</code> enhances date and time data handling with a focus on performance and accuracy.</p>
+<p>It offers a range of functions and data structures that allow you to perform various date and time operations with ease, such as determining the day of the month, hour of the day, working with ISO 8601 date and time formats, and many others.</p>
+<p>The library supports the creation of new DateTime objects with either UTC or custom timezone specifications, ensuring that you always have accurate and relevant date and time information. Additionally, it provides a mechanism to validate input dates and times, ensuring that you always have accurate information to work with.</p>
+<h2 id="h2-features" tabindex="0" itemprop="subheadline" class="features">Features</h2>
+<h3 id="h3-core" tabindex="0" itemprop="subheadline" class="core">Core Features</h3>
+<ul>
+<li><strong>Versatile Parsing and Formatting</strong>: Efficiently handles various date and time formats.</li>
+<li><strong>Rigorous Validation</strong>: Ensures data integrity and correctness.</li>
+<li><strong>Advanced Manipulation</strong>: Facilitates complex date and time computations and transformations.</li>
+<li><strong>Rust-Optimized</strong>: Leverages Rust’s capabilities for high-performance and safety.</li>
+</ul>
+<h3 id="h3-advanced" tabindex="0" itemprop="subheadline" class="advanced">Advanced Features</h3>
+<ul>
+<li><strong>Reliability</strong>: Implements error handling for robust and secure operations.</li>
+<li><strong>Configurability</strong>: Adaptable to different programming requirements.</li>
+<li><strong>Comprehensive Documentation</strong>: Well-documented API for easy integration and use.</li>
+</ul>
+<h2 id="h2-functionality" tabindex="0" itemprop="subheadline" class="functionality">Functionality</h2>
+<ul>
+<li><strong>Parsing and Validation</strong>: Parse and validate date and time data efficiently.</li>
+<li><strong>Manipulation Tools</strong>: Perform a range of date and time manipulations.</li>
+<li><strong>Flexible Formatting</strong>: Customize the representation of date and time data.</li>
+<li><strong>Error Handling</strong>: Robust handling of common date and time processing errors.</li>
+</ul>
+<p>The library <code>DateTime (DTT)</code> provides date and time types and methods to make it easier to manipulate dates and times. It uses the serde library to derive the Deserialize and Serialize traits to convert the <code>DateTime (DTT)</code> struct to and from various data formats. It also uses the time and regex crates to deal with time conversions and regular expressions respectively.</p>
+<p>The <code>DateTime (DTT)</code> struct includes fields such as:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>day</code></td>
+<td>Day of the month: (01-31)</td>
+</tr>
+<tr>
+<td><code>hour</code></td>
+<td>Hour of the day: (00-23)</td>
+</tr>
+<tr>
+<td><code>iso_8601</code></td>
+<td>ISO 8601 date and time: (e.g. “2023-01-01T00:00:00+00:00”)</td>
+</tr>
+<tr>
+<td><code>iso_week</code></td>
+<td>ISO week number: (1-53)</td>
+</tr>
+<tr>
+<td><code>microsecond</code></td>
+<td>Microsecond: (0-999999)</td>
+</tr>
+<tr>
+<td><code>minute</code></td>
+<td>Minute of the hour: (0-59)</td>
+</tr>
+<tr>
+<td><code>month</code></td>
+<td>Month: (e.g. “January”)</td>
+</tr>
+<tr>
+<td><code>now</code></td>
+<td>Now object: (e.g. “2023-01-01”)</td>
+</tr>
+<tr>
+<td><code>offset</code></td>
+<td>Offset from UTC: (e.g. “+00:00”)</td>
+</tr>
+<tr>
+<td><code>ordinal</code></td>
+<td>Ordinal date: (1-366)</td>
+</tr>
+<tr>
+<td><code>second</code></td>
+<td>Second of the minute: (0-59)</td>
+</tr>
+<tr>
+<td><code>time</code></td>
+<td>Time object: (e.g. “00:00:00”)</td>
+</tr>
+<tr>
+<td><code>tz</code></td>
+<td>Time zone object: (e.g. “UTC”)</td>
+</tr>
+<tr>
+<td><code>weekday</code></td>
+<td>Weekday object: (e.g. “Monday”)</td>
+</tr>
+<tr>
+<td><code>year</code></td>
+<td>Year object: (e.g. “2023”)</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<p>Each of which represents different aspects of a date and time.</p>
+<p>The <code>DateTime (DTT)</code> struct has two methods to create instances: <code>new</code> and <code>new_with_tz</code>. <code>new</code> creates a new <code>DateTime (DTT)</code> object with UTC timezone, and <code>new_with_tz</code> creates a new <code>DateTime (DTT)</code> object with a custom timezone.</p>
+<p>It also includes a method <code>is_valid_day</code> which checks if the input string represents a valid day of the week. It also includes a method <code>is_valid_month</code> which checks if the input string represents a valid month of the year.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h2 id="h2-getting" tabindex="0" itemprop="subheadline" class="getting">Getting Started</h2>
+<p>Begin using <code>DateTime (DTT)</code> in just a few steps.</p>
+<h3 id="h3-requirements" tabindex="0" itemprop="subheadline" class="requirements">Requirements</h3>
+<p>Ensure you have the Rust toolchain, <strong>version 1.69.0 or later (stable)</strong>.</p>
+<h3 id="h3-installation" tabindex="0" itemprop="subheadline" class="installation">Installation</h3>
+<p>After installing the Rust toolchain (instructions on the Rust website ⧉), install DateTime (DTT) with:
+instructions on the <a href="https://www.rust-lang.org/learn/get-started" title="Rust">Rust website ⧉</a>.</p>
+<p>Once you have the Rust toolchain installed, you can install <code>dtt</code>
+using the following command:</p>
+<pre lang="shell"><code>cargo install dtt
+</code></pre>
+<p>You can then run the help command to see the available options:</p>
+<pre lang="shell"><code>dtt --help
+</code></pre>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h2 id="h2-usage" tabindex="0" itemprop="subheadline" class="usage">Usage</h2>
+<p>To use the <code>dtt</code> library in your project, add the following to your
+<code>Cargo.toml</code> file:</p>
+<pre lang="toml"><code>[dependencies]
+dtt = &quot;0.0.4&quot;
+</code></pre>
+<p>Add the following to your <code>main.rs</code> file:</p>
+<pre lang="rust"><code>extern crate dtt;
+use dtt::*;
+</code></pre>
+<p>then you can use the functions in your application code.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h2 id="h2-errors" tabindex="0" itemprop="subheadline" class="errors">Errors</h2>
+<p><code>DateTime (DTT)</code> defines specific error types, such as <code>ParseError</code> and <code>FormatError</code>, ensuring robust error handling in your applications.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h2 id="h2-examples" tabindex="0" itemprop="subheadline" class="examples">Examples</h2>
+<p>To get started with <code>DateTime (DTT)</code>, you can use the examples provided in the <code>examples</code> directory of the project.</p>
+<p>To run the examples, clone the repository and run the following command in your terminal from the project root directory.</p>
+<pre lang="shell"><code>cargo run --example dtt
+</code></pre>
+<h3 id="h3-example" tabindex="0" itemprop="subheadline" class="example">Example 1: Creating a new DateTime object</h3>
+<pre lang="rust"><code>use dtt::DateTime;
+use dtt::dtt_print;
+
+fn main() {
+    // Create a new DateTime object with the current UTC time
+    let now = DateTime::new();
+    dtt_print!(now);
+}
+</code></pre>
+<h3 id="h3-example" tabindex="0" itemprop="subheadline" class="example">Example 2: Creating a new DateTime object with a custom timezone</h3>
+<pre lang="rust"><code>use dtt::DateTime;
+use dtt::dtt_print;
+
+fn main() {
+    // Create a new DateTime object with a custom timezone (e.g., CEST)
+    let paris_time = DateTime::new_with_tz(&quot;CEST&quot;);
+    dtt_print!(paris_time);
+}
+</code></pre>
+<p>Custom timezone supported by <code>DateTime (DTT)</code> are:</p>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>UtcOffset</th>
+<th>Time Zone Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ACDT</td>
+<td><code>UtcOffset::from_hms(10, 30, 0)</code></td>
+<td>Australian Central Daylight Time</td>
+</tr>
+<tr>
+<td>ACST</td>
+<td><code>UtcOffset::from_hms(9, 30, 0)</code></td>
+<td>Australian Central Standard Time</td>
+</tr>
+<tr>
+<td>ADT</td>
+<td><code>UtcOffset::from_hms(-3, 0, 0)</code></td>
+<td>Atlantic Daylight Time</td>
+</tr>
+<tr>
+<td>AEDT</td>
+<td><code>UtcOffset::from_hms(11, 0, 0)</code></td>
+<td>Australian Eastern Daylight Time</td>
+</tr>
+<tr>
+<td>AEST</td>
+<td><code>UtcOffset::from_hms(10, 0, 0)</code></td>
+<td>Australian Eastern Standard Time</td>
+</tr>
+<tr>
+<td>AKDT</td>
+<td><code>UtcOffset::from_hms(-8, 0, 0)</code></td>
+<td>Alaska Daylight Time</td>
+</tr>
+<tr>
+<td>AKST</td>
+<td><code>UtcOffset::from_hms(-9, 0, 0)</code></td>
+<td>Alaska Standard Time</td>
+</tr>
+<tr>
+<td>AST</td>
+<td><code>UtcOffset::from_hms(-4, 0, 0)</code></td>
+<td>Atlantic Standard Time</td>
+</tr>
+<tr>
+<td>AWST</td>
+<td><code>UtcOffset::from_hms(8, 0, 0)</code></td>
+<td>Australian Western Standard Time</td>
+</tr>
+<tr>
+<td>BST</td>
+<td><code>UtcOffset::from_hms(1, 0, 0)</code></td>
+<td>British Summer Time</td>
+</tr>
+<tr>
+<td>CDT</td>
+<td><code>UtcOffset::from_hms(-5, 0, 0)</code></td>
+<td>Central Daylight Time</td>
+</tr>
+<tr>
+<td>CEST</td>
+<td><code>UtcOffset::from_hms(2, 0, 0)</code></td>
+<td>Central European Summer Time</td>
+</tr>
+<tr>
+<td>CET</td>
+<td><code>UtcOffset::from_hms(1, 0, 0)</code></td>
+<td>Central European Time</td>
+</tr>
+<tr>
+<td>CST</td>
+<td><code>UtcOffset::from_hms(-6, 0, 0)</code></td>
+<td>Central Standard Time</td>
+</tr>
+<tr>
+<td>ECT</td>
+<td><code>UtcOffset::from_hms(-4, 0, 0)</code></td>
+<td>Eastern Caribbean Time</td>
+</tr>
+<tr>
+<td>EDT</td>
+<td><code>UtcOffset::from_hms(-4, 0, 0)</code></td>
+<td>Eastern Daylight Time</td>
+</tr>
+<tr>
+<td>EEST</td>
+<td><code>UtcOffset::from_hms(3, 0, 0)</code></td>
+<td>Eastern European Summer Time</td>
+</tr>
+<tr>
+<td>EET</td>
+<td><code>UtcOffset::from_hms(2, 0, 0)</code></td>
+<td>Eastern European Time</td>
+</tr>
+<tr>
+<td>EST</td>
+<td><code>UtcOffset::from_hms(-5, 0, 0)</code></td>
+<td>Eastern Standard Time</td>
+</tr>
+<tr>
+<td>GMT</td>
+<td><code>UtcOffset::from_hms(0, 0, 0)</code></td>
+<td>Greenwich Mean Time</td>
+</tr>
+<tr>
+<td>HADT</td>
+<td><code>UtcOffset::from_hms(-9, 0, 0)</code></td>
+<td>Hawaii-Aleutian Daylight Time</td>
+</tr>
+<tr>
+<td>HAST</td>
+<td><code>UtcOffset::from_hms(-10, 0, 0)</code></td>
+<td>Hawaii-Aleutian Standard Time</td>
+</tr>
+<tr>
+<td>HKT</td>
+<td><code>UtcOffset::from_hms(8, 0, 0)</code></td>
+<td>Hong Kong Time</td>
+</tr>
+<tr>
+<td>IST</td>
+<td><code>UtcOffset::from_hms(5, 30, 0)</code></td>
+<td>Indian Standard Time</td>
+</tr>
+<tr>
+<td>IDT</td>
+<td><code>UtcOffset::from_hms(3, 0, 0)</code></td>
+<td>Israel Daylight Time</td>
+</tr>
+<tr>
+<td>JST</td>
+<td><code>UtcOffset::from_hms(9, 0, 0)</code></td>
+<td>Japan Standard Time</td>
+</tr>
+<tr>
+<td>KST</td>
+<td><code>UtcOffset::from_hms(9, 0, 0)</code></td>
+<td>Korean Standard Time</td>
+</tr>
+<tr>
+<td>MDT</td>
+<td><code>UtcOffset::from_hms(-6, 0, 0)</code></td>
+<td>Mountain Daylight Time</td>
+</tr>
+<tr>
+<td>MST</td>
+<td><code>UtcOffset::from_hms(-7, 0, 0)</code></td>
+<td>Mountain Standard Time</td>
+</tr>
+<tr>
+<td>NZDT</td>
+<td><code>UtcOffset::from_hms(13, 0, 0)</code></td>
+<td>New Zealand Daylight Time</td>
+</tr>
+<tr>
+<td>NZST</td>
+<td><code>UtcOffset::from_hms(12, 0, 0)</code></td>
+<td>New Zealand Standard Time</td>
+</tr>
+<tr>
+<td>PDT</td>
+<td><code>UtcOffset::from_hms(-7, 0, 0)</code></td>
+<td>Pacific Daylight Time</td>
+</tr>
+<tr>
+<td>PST</td>
+<td><code>UtcOffset::from_hms(-8, 0, 0)</code></td>
+<td>Pacific Standard Time</td>
+</tr>
+<tr>
+<td>UTC</td>
+<td><code>UtcOffset::from_hms(0, 0, 0)</code></td>
+<td>Coordinated Universal Time</td>
+</tr>
+<tr>
+<td>WADT</td>
+<td><code>UtcOffset::from_hms(8, 45, 0)</code></td>
+<td>West Australian Daylight Time</td>
+</tr>
+<tr>
+<td>WAST</td>
+<td><code>UtcOffset::from_hms(7, 0, 0)</code></td>
+<td>West Australian Standard Time</td>
+</tr>
+<tr>
+<td>WEDT</td>
+<td><code>UtcOffset::from_hms(1, 0, 0)</code></td>
+<td>Western European Daylight Time</td>
+</tr>
+<tr>
+<td>WEST</td>
+<td><code>UtcOffset::from_hms(1, 0, 0)</code></td>
+<td>Western European Summer Time</td>
+</tr>
+<tr>
+<td>WET</td>
+<td><code>UtcOffset::from_hms(0, 0, 0)</code></td>
+<td>Western European Time</td>
+</tr>
+<tr>
+<td>WST</td>
+<td><code>UtcOffset::from_hms(8, 0, 0)</code></td>
+<td>Western Standard Time</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h3 id="h3-example" tabindex="0" itemprop="subheadline" class="example">Example 3: Formatting a DateTime object</h3>
+<pre lang="rust"><code>use dtt::DateTime;
+use dtt::dtt_print;
+
+fn main() {
+    // Create a new DateTime object with the current UTC time
+    let now = DateTime::new();
+
+    // Format the DateTime object as a string
+    let formatted_time = now.format(&quot;%Y-%m-%d %H:%M:%S&quot;);
+    dtt_print!(&quot;Formatted time: {}&quot;, formatted_time);
+}
+</code></pre>
+<h3 id="h3-example" tabindex="0" itemprop="subheadline" class="example">Example 4: Parsing a string into a DateTime object</h3>
+<pre lang="rust"><code>use dtt::DateTime;
+use dtt::dtt_print;
+
+fn main() {
+    // Parse a string into a DateTime object
+    let date_string = &quot;2023-05-12T12:00:00+00:00&quot;;
+    match DateTime::parse(date_string) {
+        Ok(datetime) =&gt; dtt_print!(&quot;Parsed DateTime: {}&quot;, datetime),
+        Err(err) =&gt; dtt_print!(&quot;Error parsing DateTime: {}&quot;, err),
+    }
+}
+</code></pre>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+<h3 id="h3-documentation" tabindex="0" itemprop="subheadline" class="documentation">Documentation</h3>
+<p>For comprehensive information and resources related to <code>DateTime (DTT)</code>, we invite you
+to explore our extensive documentation.</p>
+<p>Detailed guides, API references, and examples are available on <a href="https://docs.rs/dtt" title="DateTime (DTT) on Docs.rs">docs.rs ⧉</a>,
+where you’ll find in-depth material to support your development needs.</p>
+<p>For library-specific details and to access our collection of Rust libraries,
+visit <a href="https://lib.rs/crates/dtt" title="DateTime (DTT) on Lib.rs">lib.rs ⧉</a>.</p>
+<p>Additionally, you can explore <a href="https://crates.io/crates/dtt" title="DateTime (DTT) on Crates.io">crates.io ⧉</a> to find a wide range of Rust
+crates, which include the necessary tools and libraries to enhance your
+projects.</p>
+<p>These resources are designed to provide you with the most up-to-date
+and thorough information to assist in your development endeavours.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" /></p>
+</div>
+    </main>
+
+    <!-- Footer-->
+     <!-- Footer-->
+  <footer id="footer" aria-label="footer" class="footer border-top mt-auto py-3">
+    <span class="px-2">© 2023 DateTime (DTT). All rights reserved.</span>
+    <p class="mb-0">
+      <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+      <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
+      <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+    </p>
+  </footer>
+  <!-- # End Footer-->
+
+    <script
+      async
+      crossorigin="anonymous"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebPage",
+        "author": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "copyrightHolder": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "copyrightYear": "© 2023 DateTime (DTT). All rights reserved.",
+        "creator": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "dateModified": "2023-12-03T21:12:21+00:00",
+        "datePublished": "2023-12-03T21:12:21+00:00",
+        "description": "Discover DateTime (DTT), a Rust library for efficient date-time parsing, validation, and formatting, tailored for accuracy and performance in software.",
+        "headline": "Start Building Secure Applications with DateTime (DTT)",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://kura.pro/dtt/images/logos/dtt.webp"
+        },
+        "inLanguage": "en-GB",
+        "mainEntityOfPage": "https://dttlib.one/getting-started/index.html",
+        "name": "Getting Started",
+        "publisher": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        }
+      }
+    </script>
+    <script type="module" defer>
+      // This is an Immediately Invoked Function Expression (IIFE) which helps
+      // to avoid declaring any globals.
+      (function () {
+        // Create a new script element
+        var script = document.createElement("script");
+
+        // Set the source of the script element to "/main.js".
+        // A timestamp is appended as a query string to ensure the browser
+        // always fetches the latest version of the script, bypassing the
+        // cache.
+        script.src = "/main.js";
+
+        // The script is of type "text/javascript"
+
+        // The script is set to execute asynchronously as soon as it's
+        //available
+
+        // Append the script element to the head of the document
+        document.head.appendChild(script);
+      })(); // The function is immediately invoked
+    </script>
+    <script>
+      // JavaScript code
+      var dropDownElements = document.querySelectorAll('.drop-down');
+      dropDownElements.forEach(function(element) {
+        element.classList.add('animate');
+      });
+
+      window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        dropDownElements.forEach(function(element) {
+          if (scrollTop === 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8BP19YHP8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C8BP19YHP8');
+    </script>
+  </body>
+</html>

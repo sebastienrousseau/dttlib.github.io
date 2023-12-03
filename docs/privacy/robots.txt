@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://dttlib.one/privacy/index.html/sitemap.xml

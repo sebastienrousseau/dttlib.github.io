@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://dttlib.one/made-with-shokunin/index.html/sitemap.xml

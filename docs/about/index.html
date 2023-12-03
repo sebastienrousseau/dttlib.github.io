@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta itemprop="datePublished" content="2023-12-03T21:12:21+00:00" id="date">
+    <meta itemprop="dateModified" content="2023-12-03T21:12:21+00:00" id="last-modified">
+    <title>DateTime (DTT): Rust Library for Date-Time Management</title>
+
+    <!-- # Start Primary Meta Tags -->
+    <meta content="Sebastien Rousseau" name="author"><meta content="Discover DateTime (DTT), a Rust library for handling date and time data with precision. Ideal for efficient parsing, validation, and formatting." name="description"><meta content="telephone=no" name="format-detection"><meta content="Shokunin 🦀 (version 0.0.20)" name="generator"><meta content="DateTime, DTT, Rust library, date parsing, time validation, data manipulation, Rust programming, efficient computing, software development, Rust date-time" name="keywords"><meta content="en-GB" name="language"><meta content="https://dttlib.one/about/index.html" name="permalink"><meta content="general" name="rating"><meta content="no-referrer" name="referrer"><meta content="7 days" name="revisit-after"><meta content="index, follow" name="robots"><meta content="" name="theme-color"><meta content="DateTime (DTT): Rust Library for Date-Time Management" name="title"><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- # End Primary Meta Tags -->
+
+    <!-- # Start Open Graph / Facebook Meta Tags -->
+    <meta name="og:description" content="Discover DateTime (DTT), a Rust library for handling date and time data with precision. Ideal for efficient parsing, validation, and formatting.">
+<meta name="og:image" content="https://kura.pro/dtt/images/logos/dtt.webp">
+<meta name="og:image:alt" content="Logo of DateTime (DTT): Rust Library for Date-Time Management">
+<meta name="og:image:height" content="100vh">
+<meta name="og:image:width" content="100vw">
+<meta name="og:locale" content="en_GB">
+<meta name="og:title" content="DateTime (DTT): Rust Library for Date-Time Management">
+<meta name="og:type" content="website">
+<meta name="og:url" content="https://dttlib.one/about/index.html">
+    <!-- # End Open Graph / Facebook Meta Tags -->
+
+    <!-- # Start Accessibility Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <!-- # End Accessibility Meta Tags -->
+
+    <!-- # Start Apple Meta Tags -->
+    <meta content="portrait" name="apple_mobile_web_app_orientations"><meta content="192x192" name="apple_touch_icon_sizes"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-inset"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="DateTime (DTT): Rust Library for Date-Time Management" name="apple-mobile-web-app-title"><meta content="yes" name="apple-touch-fullscreen">
+    <!-- # End Apple Meta Tags -->
+
+<!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
+  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
+  img-src 'self' data: https: kura.pro www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self';" />
+<!-- # End Content Security Policy Meta Tags -->
+
+
+
+    <!-- # Start Microsoft Meta Tags -->
+    <meta content="" name="msapplication-navbutton-color">
+    <!-- # End Microsoft Meta Tags -->
+
+    <!-- # Start Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@wwdseb">
+<meta name="twitter:description" content="Discover DateTime (DTT), a Rust library for handling date and time data with precision. Ideal for efficient parsing, validation, and formatting.">
+<meta name="twitter:image" content="https://kura.pro/dtt/images/logos/dtt.webp">
+<meta name="twitter:image:alt" content="Logo of DateTime (DTT): Rust Library for Date-Time Management">
+<meta name="twitter:image:height" content="100vh">
+<meta name="twitter:image:width" content="100vw">
+<meta name="twitter:site" content="https://dttlib.one/about/index.html">
+<meta name="twitter:title" content="DateTime (DTT): Rust Library for Date-Time Management">
+<meta name="twitter:url" content="https://dttlib.one/about/index.html">
+    <!-- # End Twitter Meta Tags -->
+
+    <!-- # Start Links -->
+    <link rel="alternate" href="https://dttlib.one/about/index.html" hreflang="en" />
+    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/ken-cheung-KonWFWUaAuk.webp">
+    <link rel="canonical" href="https://dttlib.one/about/index.html" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kura.pro/dtt/images/favicon.ico"
+      sizes="16x16 32x32"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kura.pro/dtt/images/icons/192x192.png"
+      sizes="192x192"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- # End Links -->
+
+    <!-- # Start Styles -->
+    <style>
+      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h5,h6{color:var(--theme-color)}:root{--theme-color:rgb(205,53,44)}*{font-weight:300}a{color:var(--theme-color);text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.btn-info{background-color:var(--theme-color) !important;border-color:var(--theme-color) !important}.text-info{color:var(--theme-color) !important}.zoom-out:hover{transform:scale(.618)}table{border:1px solid var(--theme-color);border-collapse:collapse;border-spacing:0;empty-cells:show;margin-bottom:26.18px;width:100%}td,th,thead{vertical-align:top}thead{background-color:var(--theme-color);color:#fff !important;font-size:22px;text-align:center;vertical-align:middle;border-bottom:1px solid black}td,th{background-color:transparent;border-left:1px solid var(--theme-color);border-width:0 0 0 1px;margin:0;overflow:visible;padding:6.18px 12px}.bg-dark{background-color:#141414 !important}
+    </style>
+    <!-- # End Styles -->
+  </head>
+  <body
+    aria-label="body"
+    id="page-top"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    class="bg-dark text-start text-light text-center"
+  >
+    <!-- # Start Responsive navbar -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top shadow-small navbar-dark bg-dark"
+      aria-label="navbar"
+      id="mainNav"
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+    >
+    <div class="container-xxl p-3">
+      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
+        <img
+          class="d-inline-block align-top"
+          width="44"
+          height="44"
+          src="https://kura.pro/dtt/images/logos/dtt.webp"
+          alt="Logo of DateTime (DTT): Rust Library for Date-Time Management"
+          title="Logo of DateTime (DTT): Rust Library for Date-Time Management"
+          loading="lazy"
+        />
+      </a>
+      <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="About DateTime (DTT) - Discover DateTime (DTT), a Rust library for handling date and time data with precision. Ideal for efficient parsing, validation, and formatting." class="text-decoration-none text-white">About DateTime (DTT)</a></span>
+      <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-white ms-auto mb-2 bg-transparent">
+            <li class="nav-item">
+              <a
+                class="nav-link text-info"
+                href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+              class="nav-link  active"
+              aria-current="page"
+              href="/about/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-info"
+                aria-current="page"
+                href="/getting-started/index.html">Getting Started</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-info dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Resources</a>
+              <ul
+                class="dropdown-menu dropdown-menu-end border border-danger bg-white"
+                aria-labelledby="resourcesDropdown"
+              >
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/contribute/index.html">Contribute</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="https://github.com/sebastienrousseau/dtt" target="_blank">GitHub ⧉</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/made-with-shokunin/index.html">Made with Shokunin</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/tags/index.html">Tags</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="button btn btn-info rounded-pill text-white"
+                aria-current="page"
+                href="/contact/index.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- # End Responsive navbar -->
+
+    <!-- Header-->
+    <header class="w-100 py-5 position-relative">
+      <img
+        alt="Tree on body of water near mountains"
+        aria-hidden="false"
+        class="fade-in position-absolute top-0 start-0 w-100 h-100"
+        data-has-animated="true"
+        data-show-type="fade-in"
+        height="100vh"
+        loading="lazy"
+        src="https://kura.pro/stock/images/banners/ken-cheung-KonWFWUaAuk.webp"
+        style="object-fit: cover; z-index: -1;"
+        title="Tree on body of water near mountains"
+        width="100vw"
+      />
+      <div class="text-center text-white center mx-auto rounded rounded-3 p-5"
+        style="
+          background-color: rgba(0, 0, 0, 0.618);
+          width: 61vw;
+          height: auto;
+          z-index: 1;">
+          <p class="display-2">About DateTime (DTT)</p>
+            <p class="lead fs-3">DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times</p>
+      </div>
+    </header>
+    <!-- # End Header-->
+
+    <!-- Main content-->
+    <main id="main" class="bd-masthead fs-5 p-5 bg-white text-black" aria-label="main">
+      <div class="text-start justify-content-between"><h1 id="h1-datetime" tabindex="0" itemprop="headline" id="" tabindex="0" itemprop="headline" class="datetime">DateTime (DTT): Rust Library for Date-Time Management</h1><p>Discover DateTime (DTT), a Rust library for handling date and time data with precision. Ideal for efficient parsing, validation, and formatting.</p><p></p><p><code>DateTime (DTT)</code> is a Rust-based library engineered to offer an advanced solution for handling date and time data. Developed with a focus on performance, accuracy, and ease of integration, <code>DTT</code> is designed to meet the rigorous demands of modern software development.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider"  class="m-10 w-100"/></p>
+<h2 id="h2-enhancing" tabindex="0" itemprop="subheadline" class="enhancing">Enhancing Data Accuracy &amp; Efficiency with DateTime (DTT) in Rust</h2>
+<p>In the digital age, precise and efficient handling of date and time data is crucial. DTT addresses this need by providing a suite of functionalities that ensure accurate parsing, validation, and manipulation of time-related data. This capability is crucial for applications where time data is critical, such as in financial transactions, scheduling systems, and log management.</p>
+<p>DateTime (DTT) stands at the forefront of Rust libraries, offering an extensive range of features that cater to diverse programming requirements. These include:</p>
+<ul>
+<li>Versatile Date and Time Parsing: Allows efficient and accurate parsing of various date and time formats.</li>
+<li>Rigorous Data Validation: Guarantees the integrity and correctness of date and time data.</li>
+<li>Advanced Manipulation Capabilities: Facilitates sophisticated date and time computations and transformations.</li>
+<li>Flexible Formatting Options: Provides numerous ways to format date and time data to fit different use cases.</li>
+</ul>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider"  class="m-10 w-100"/></p>
+<h2 id="h2-datetime" tabindex="0" itemprop="subheadline" class="datetime">DateTime (DTT): A Rust Library for Efficient Date and Time Management</h2>
+<p>DateTime (DTT) leverages Rust’s renowned performance and memory safety features to deliver a robust, efficient, and versatile library. It is compatible with standard and no-std Rust environments, making it suitable for a wide range of applications, from server-side systems to embedded devices.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider"  class="m-10 w-100"/></p>
+<h2 id="h2-enhancing" tabindex="0" itemprop="subheadline" class="enhancing">Enhancing Application Performance with DateTime (DTT)</h2>
+<p>Designed for optimal performance and a minimal memory footprint, DateTime (DTT) is ideal for applications that require high efficiency and reliability. Its Rust-based implementation takes full advantage of the language’s safety features, ensuring that applications using DTT are not just efficient but also secure and robust.</p>
+<p><a href="/getting-started/index.html" title="Get Started with DateTime (DTT) Today!">Get Started with DateTime (DTT) Today!</a> Easy to integrate and open for both personal and commercial use, DateTime (DTT) is your essential tool for managing date and time data in Rust applications.</p>
+</div>
+    </main>
+
+    <!-- Footer-->
+    <footer id="footer" aria-label="footer" class="footer border-top mt-auto py-3">
+      <span class="px-2">© 2023 DateTime (DTT). All rights reserved.</span>
+      <p class="mb-0">
+        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
+        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+      </p>
+    </footer>
+    <!-- # End Footer-->
+
+    <script
+      async
+      crossorigin="anonymous"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebPage",
+        "author": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "copyrightHolder": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "copyrightYear": "© 2023 DateTime (DTT). All rights reserved.",
+        "creator": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "dateModified": "2023-12-03T21:12:21+00:00",
+        "datePublished": "2023-12-03T21:12:21+00:00",
+        "description": "Discover DateTime (DTT), a Rust library for handling date and time data with precision. Ideal for efficient parsing, validation, and formatting.",
+        "headline": "DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://kura.pro/dtt/images/logos/dtt.webp"
+        },
+        "inLanguage": "en-GB",
+        "mainEntityOfPage": "https://dttlib.one/about/index.html",
+        "name": "About DateTime (DTT)",
+        "publisher": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        }
+      }
+    </script>
+    <script type="module" defer>
+      // This is an Immediately Invoked Function Expression (IIFE) which helps
+      // to avoid declaring any globals.
+      (function () {
+        // Create a new script element
+        var script = document.createElement("script");
+
+        // Set the source of the script element to "/main.js".
+        // A timestamp is appended as a query string to ensure the browser
+        // always fetches the latest version of the script, bypassing the
+        // cache.
+        script.src = "/main.js";
+
+        // The script is of type "text/javascript"
+
+        // The script is set to execute asynchronously as soon as it's
+        //available
+
+        // Append the script element to the head of the document
+        document.head.appendChild(script);
+      })(); // The function is immediately invoked
+    </script>
+    <script>
+      // JavaScript code
+      var dropDownElements = document.querySelectorAll('.drop-down');
+      dropDownElements.forEach(function(element) {
+        element.classList.add('animate');
+      });
+
+      window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        dropDownElements.forEach(function(element) {
+          if (scrollTop === 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8BP19YHP8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C8BP19YHP8');
+    </script>
+  </body>
+</html>

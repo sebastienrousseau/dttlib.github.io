@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://dttlib.one/tags/index.html/sitemap.xml
