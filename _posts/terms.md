@@ -18,7 +18,7 @@ format-detection: "telephone=no"
 form-id: ""
 hreflang: "en"
 icon: "https://kura.pro/dtt/images/favicon.ico"
-id: "https://dttlib.one/terms/index.html"
+id: "https://dttlib.com/terms/index.html"
 image_alt: "Logo of DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times"
 image_height: "100vh"
 image_width: "100vw"
@@ -34,7 +34,7 @@ logo: "https://kura.pro/dtt/images/logos/dtt.webp"
 menu: "active"
 measurementID: "G-6SN6WET0X1"
 name: "Terms"
-permalink: "https://dttlib.one/terms/index.html"
+permalink: "https://dttlib.com/terms/index.html"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "7 days"
@@ -44,26 +44,26 @@ subtitle: "What You Need to Know Before Using Our Services"
 tags: "agreement, copyright, intellectual property, liability, limitation, links, privacy, terms, trademark, use, website"
 theme_color: "rgb(255, 117, 121)"
 title: "Terms and Conditions of Use"
-url: "https://dttlib.one/terms/index.html"
+url: "https://dttlib.com/terms/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
 
-atom_link: "https://dttlib.one/terms/rss.xml"
+atom_link: "https://dttlib.com/terms/rss.xml"
 category: "Rust, DateTime, Parsing, Formatting, Validation, Software, Integration, Performance, Development, Timezones"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin SSG (version 0.0.26)"
 item_description: "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations."
-item_guid: "https://dttlib.one/terms/rss.xml"
-item_link: "https://dttlib.one/terms/rss.xml"
+item_guid: "https://dttlib.com/terms/rss.xml"
+item_link: "https://dttlib.com/terms/rss.xml"
 item_pub_date: "2023-12-03T21:12:21+00:00"
 item_title: "Terms and Conditions of Use"
 last_build_date: "2023-12-03T21:12:21+00:00"
-managing_editor: "contact@dttlib.one"
+managing_editor: "contact@dttlib.com"
 pub_date: "2023-12-03T21:12:21+00:00"
 ttl: "60"
 type: "website"
-webmaster: "contact@dttlib.one"
+webmaster: "contact@dttlib.com"
 
 # Apple - The Apple front matter (YAML).
 
@@ -88,11 +88,11 @@ twitter_image: "https://kura.pro/dtt/images/logos/dtt.webp"
 twitter_image_alt: "Logo of DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times"
 twitter_site: "@wwdseb"
 twitter_title: "Terms and Conditions of Use"
-twitter_url: "https://dttlib.one/terms/index.html"
+twitter_url: "https://dttlib.com/terms/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 
-author_website: "https://dttlib.one/terms/index.html"
+author_website: "https://dttlib.com/terms/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
@@ -106,7 +106,7 @@ site_software: "Shokunin, Rust"
 ## Agreement to Terms of Use
 
 These Terms and Conditions of Use (the "Terms and Conditions of Use") apply to
-the website located at <https://dttlib.one/> (the "Website").
+the website located at <https://dttlib.com/> (the "Website").
 
 BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT
 USE THE SITE.

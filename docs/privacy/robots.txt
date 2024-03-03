@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://dttlib.one/privacy/index.html/sitemap.xml
+Sitemap: https://dttlib.com/privacy/index.html/sitemap.xml

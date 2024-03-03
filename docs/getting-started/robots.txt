@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://dttlib.one/getting-started/index.html/sitemap.xml
+Sitemap: https://dttlib.com/getting-started/index.html/sitemap.xml

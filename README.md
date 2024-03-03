@@ -10,9 +10,9 @@
 
 <!-- markdownlint-enable MD033 MD041 -->
 
-# dttlib.one - Official Website 🌏
+# dttlib.com - Official Website 🌏
 
-Welcome to the repository for [dttlib.one][00], the digital presence of
+Welcome to the repository for [dttlib.com][00], the digital presence of
 DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times.
 
 ## Quick Start Guide
@@ -36,21 +36,21 @@ cargo install ssg
 2. Clone the repository
 
 ```shell
-git clone https://github.com/sebastienrousseau/dttlib.one.github.io.git
+git clone https://github.com/sebastienrousseau/dttlib.com.github.io.git
 ```
 
 3. Change into the repository directory:
 
 ```shell
-cd dttlib.one.github.io
+cd dttlib.com.github.io
 ```
 
-4. Generate the static site for dttlib.one:
+4. Generate the static site for dttlib.com:
 
 ```shell
 ssg -n=docs -c=_posts -t=_layouts -o=output -s=public
 ```
 
 
-[00]: https://dttlib.one "DateTime (DTT) Official Website"
+[00]: https://dttlib.com "DateTime (DTT) Official Website"
 [01]: https://www.rust-lang.org/learn/get-started "Rust Getting started guide"
