@@ -3,7 +3,7 @@
 # Front Matter (YAML)
 
 author: "Sebastien Rousseau"
-banner_alt: "DateTime (DTT), Your Essential Toolkit for Date and Time Operations. A robust Rust library, DTT is designed for parsing, validating, manipulating, and formatting dates and times with precision and ease."
+banner_alt: "DateTime (DTT), Your Essential Toolkit for Date and Time Operations."
 banner_height: "100vh"
 banner_width: "100vw"
 banner: "https://kura.pro/dtt/images/github/github-dtt.webp"
@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "utf-8"
 cname: "dttlib.one"
 copyright: "© 2023 DateTime (DTT). All rights reserved."
-date: "Dec 03, 2023"
+date: "Mar 04, 2024"
 description: "DateTime (DTT), a Rust library for parsing, validating, formatting dates and times. Ideal for Rust developers needing reliable time data handling capabilities"
 doc_url: "/installation/index.html"
 doc_title: "Installation Guide"
@@ -31,7 +31,7 @@ keywords: "DateTime, Rust library, date parsing, time formatting, DTT, Rust date
 language: "en-GB"
 layout: "index"
 locale: "en_GB"
-logo_alt: "Logo of DateTime (DTT), a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times"
+logo_alt: "DateTime (DTT)"
 logo_height: "44"
 logo_width: "44"
 logo: "https://kura.pro/dtt/images/logos/dtt.webp"
@@ -46,7 +46,7 @@ robots: "index, follow"
 short_name: "dtt"
 subtitle: "DateTime (DTT), a Rust library for handling date and time data with precision. Ideal for efficient parsing, validation, and formatting."
 tags: "DateTime, Rust, Parsing, Formatting, Validation, Manipulation, DTT, Development, Programming, Efficiency"
-theme_color: "rgb(205,53,44)"
+theme_color: "rgb(255, 117, 121)"
 title: "DateTime (DTT) Rust Library: Parse & Format Dates with Ease"
 url: "https://dttlib.one/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -56,15 +56,15 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://dttlib.one/rss.xml"
 category: "Rust Programming, Date-Time Libraries, Software Development Tools, Data Parsing Techniques, Time Management Solutions, Code Validation, Software Integration, Application Performance, System Programming, Rust Ecosystem"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.20)"
+generator: "Shokunin SSG (version 0.0.26)"
 item_description: "DateTime (DTT), a Rust library for parsing, validating, formatting dates and times. Ideal for Rust developers needing reliable time data handling capabilities"
 item_guid: "https://dttlib.one/rss.xml"
 item_link: "https://dttlib.one/rss.xml"
-item_pub_date: "2023-12-03T21:12:21+00:00"
+item_pub_date: "Mon, 04 Mar 2024 06:06:06 +0100"
 item_title: "DateTime (DTT) Rust Library: Parse & Format Dates with Ease"
-last_build_date: "2023-12-03T21:12:21+00:00"
+last_build_date: "Mon, 04 Mar 2024 06:06:06 +0100"
 managing_editor: "contact@dttlib.one"
-pub_date: "2023-12-03T21:12:21+00:00"
+pub_date: "Mon, 04 Mar 2024 06:06:06 +0100"
 ttl: "60"
 type: "website"
 webmaster: "contact@dttlib.one"
@@ -83,7 +83,7 @@ apple-touch-fullscreen: "yes"
 
 msapplication-config: "https://dttlib.one/browserconfig.xml"
 msapplication-tap-highlight: "no"
-msapplication-TileColor: "rgb(205,53,44)"
+msapplication-TileColor: "rgb(255, 117, 121)"
 msapplication_tile_image: "https://kura.pro/dtt/images/logos/dtt.webp"
 
 # Twitter Card - The Twitter Card front matter (YAML).
@@ -110,21 +110,21 @@ site_software: "Shokunin, Rust"
 
 ---
 
-## Overview
-
-DateTime (DTT) is a comprehensive Rust library dedicated to parsing, validating, manipulating, and formatting dates and times. Crafted with precision and flexibility in mind, it offers robust solutions for developers working with date and time data in Rust.
+DateTime (DTT) is a Rust library designed for handling dates and times with precision and flexibility. It provides developers with tools for parsing, validating, manipulating, and formatting date and time data efficiently. As part of the Mini Functions family of libraries, DTT integrates seamlessly with Rust applications, providing a robust solution for date and time management in software development projects.
 
 ## Key Features
 
-- **Versatile Date and Time Parsing:** DTT allows for efficient parsing of date and time data, supporting a wide range of formats.
-- **Data Validation:** Makes sure the integrity of date and time data through rigorous validation processes.
-- **Manipulation Capabilities:** Offers a suite of functions to manipulate date and time data, accommodating various programming needs.
-- **Formatting Flexibility:** DTT provides multiple formatting options to represent date and time data as required.
+DateTime (DTT) provides a wide range of functionality for working with date and time data, including:
 
-## Functionality
+- **Versatile Parsing and Validation**: The DateTime (DTT) Rust library showcases its versatility through its extensive support for parsing various date and time formats, catering to a wide array of data sources and standards. This capability is crucial for developers working with diverse datasets or integrating with multiple systems, where consistency in date and time formats cannot always be guaranteed. Below, we delve into the specific formats and standards DTT supports, highlighting its adaptability and utility in different programming scenarios.
+- **Comprehensive Manipulation and Formatting**: With DTT, manipulating date and time data is straightforward, thanks to its suite of functions designed to accommodate various programming needs. Whether it's adjusting dates, converting time zones, or formatting dates and times for display, DTT offers the flexibility required to handle these tasks efficiently.
+- **Serialization and Deserialization**: Leveraging the serde library, DTT allows for easy serialization and deserialization of the DateTime struct to and from various data formats. This feature is particularly useful for applications that need to store or transmit date and time data in a structured and interoperable manner.
+- **Time Zone and ISO 8601 Support**: DTT supports the creation of new DateTime objects with either UTC or custom timezone specifications, ensuring that applications can handle date and time data across different geographical locations accurately. Additionally, the library provides robust support for working with ISO 8601 date and time formats, a critical feature for international applications
+- **Developer-Friendly Macros**: DTT includes macros for input validation and struct generation, streamlining the development process and ensuring that developers can work with date and time data efficiently.
+- **Performance and Reliability**: DTT is designed to be performant and reliable, ensuring that date and time operations are executed with precision and accuracy. The library's robust testing suite and continuous integration pipeline ensure that it meets the highest standards of quality and reliability.
 
-DTT integrates seamlessly into Rust applications, offering a user-friendly interface for handling date and time operations. It includes a set of macros for input validation and struct generation, facilitating a streamlined workflow. The main entry point of the application demonstrates the ease of implementing DTT in any Rust project.
+DateTime (DTT) is a powerful and versatile Rust library for managing dates and times, offering a wide range of features and capabilities to meet the needs of modern Rust applications. With its focus on ease of use, flexibility, and robustness, DTT is an essential tool for developers working with date and time data in Rust.
 
-[Discover how DTT can enhance your Rust projects][01] with its advanced date and time handling capabilities.
+[Learn more][01] about how DTT can enhance your Rust projects with its advanced date and time handling capabilities.
 
 [01]: /about/index.html "Learn more about the benefits of DateTime (DTT)"

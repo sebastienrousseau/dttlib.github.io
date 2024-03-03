@@ -42,7 +42,7 @@ robots: "index, follow"
 short_name: "dtt"
 subtitle: "Thank you for getting in touch!"
 tags: "contact,help,support"
-theme_color: "rgb(205,53,44)"
+theme_color: "rgb(255, 117, 121)"
 title: "Thank you for contacting DateTime (DTT). We will be in touch"
 url: "https://dttlib.one/thanks/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -51,7 +51,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://dttlib.one/contact/rss.xml"
 category: "Rust, DateTime, Parsing, Formatting, Validation, Software, Integration, Performance, Development, Timezones"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.20)"
+generator: "Shokunin SSG (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://dttlib.one/contact/rss.xml"
 item_link: "https://dttlib.one/contact/rss.xml"
@@ -75,7 +75,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(205,53,44)"
+msapplication-navbutton-color: "rgb(255, 117, 121)"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

@@ -98,12 +98,12 @@ content="default-src 'self';
           width="{{logo_width}}"
           height="{{logo_height}}"
           src="{{logo}}"
-          alt="{{logo_alt}}"
-          title="{{logo_alt}}"
+          alt="Image for {{logo_alt}}"
+          title="Logo of {{logo_alt}}"
           loading="lazy"
         />
       </a>
-      <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="{{name}} - {{description}}" class="text-decoration-none text-white">{{name}}</a></span>
+      <span class="fs-4" itemprop="name">{{name}}</span>
       <button
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
@@ -144,11 +144,8 @@ content="default-src 'self';
                 >Resources</a>
               <ul
                 class="dropdown-menu dropdown-menu-end border border-danger bg-white"
-                aria-labelledby="resourcesDropdown"
+                aria-labelledby="navbarSupportedContent"
               >
-                <li>
-                  <a class="bg-transparent dropdown-item text-info" href="/getting-started/index.html">Getting Started</a>
-                </li>
                 <li>
                   <a class="bg-transparent dropdown-item text-info" href="/contribute/index.html">Contribute</a>
                 </li>
@@ -190,11 +187,11 @@ content="default-src 'self';
             loading="lazy"
             src="{{banner}}"
             style="object-fit: cover; z-index: -1;"
-            title="{{banner_alt}}"
+            title="Banner of the {{banner_alt}}"
             width="{{banner_width}}"
           />
           <p>
-            <a href="{{download_url}}" class="btn btn-lg btn-outline-danger my-2" title="{{download_title}}">{{download_title}}</a>
+            <a href="{{download_url}}" class="btn btn-lg btn-outline-danger my-2" title="CTA to {{download_title}}">{{download_title}}</a>
           </p>
       </section>
     </header>

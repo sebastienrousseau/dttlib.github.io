@@ -41,7 +41,7 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "dtt"
 subtitle: "Be a part of something bigger"
-theme_color: "rgb(205,53,44)"
+theme_color: "rgb(255, 117, 121)"
 title: "Share Your Skills and Expertise by Contributing to DateTime"
 url: "https://dttlib.one/contribute/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -51,7 +51,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: https://dttlib.one/contribute/rss.xml
 category: "Rust, DateTime, Parsing, Formatting, Validation, Software, Integration, Performance, Development, Timezones"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.20)"
+generator: "Shokunin SSG (version 0.0.26)"
 item_description: "Would you like to join the project? We're always looking for people with skills in both developing and using open source software."
 item_guid: https://dttlib.one/contribute/rss.xml
 item_link: https://dttlib.one/contribute/rss.xml
@@ -78,7 +78,7 @@ apple-touch-fullscreen: "yes"
 
 msapplication-config: "https://dttlib.one/browserconfig.xml"
 msapplication-tap-highlight: "no"
-msapplication-TileColor: "rgb(205,53,44)"
+msapplication-TileColor: "rgb(255, 117, 121)"
 msapplication_tile_image: "https://kura.pro/dtt/images/logos/dtt.webp"
 
 # Twitter Card - The Twitter Card front matter (YAML).

@@ -42,7 +42,7 @@ robots: "index, follow"
 short_name: "dtt"
 subtitle: "What You Need to Know Before Using Our Services"
 tags: "agreement, copyright, intellectual property, liability, limitation, links, privacy, terms, trademark, use, website"
-theme_color: "rgb(205,53,44)"
+theme_color: "rgb(255, 117, 121)"
 title: "Terms and Conditions of Use"
 url: "https://dttlib.one/terms/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -52,7 +52,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://dttlib.one/terms/rss.xml"
 category: "Rust, DateTime, Parsing, Formatting, Validation, Software, Integration, Performance, Development, Timezones"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.20)"
+generator: "Shokunin SSG (version 0.0.26)"
 item_description: "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations."
 item_guid: "https://dttlib.one/terms/rss.xml"
 item_link: "https://dttlib.one/terms/rss.xml"
@@ -77,7 +77,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(205,53,44)"
+msapplication-navbutton-color: "rgb(255, 117, 121)"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

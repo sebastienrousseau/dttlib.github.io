@@ -41,7 +41,7 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "dtt"
 subtitle: "Seek help, support with using or installing DateTime (DTT)"
-theme_color: "rgb(205,53,44)"
+theme_color: "rgb(255, 117, 121)"
 title: "DateTime (DTT) Contact: Get in Touch"
 url: "https://dttlib.one/contact/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: https://dttlib.one/contact/rss.xml
 category: "Rust, DateTime, Parsing, Formatting, Validation, Software, Integration, Performance, Development, Timezones"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.20)"
+generator: "Shokunin SSG (version 0.0.26)"
 item_description: "Contact us today to learn more about how DateTime (DTT)."
 item_guid: https://dttlib.one/contact/rss.xml
 item_link: https://dttlib.one/contact/rss.xml
@@ -77,7 +77,7 @@ apple-touch-fullscreen: "yes"
 
 msapplication-config: "https://dttlib.one/browserconfig.xml"
 msapplication-tap-highlight: "no"
-msapplication-TileColor: "rgb(205,53,44)"
+msapplication-TileColor: "rgb(255, 117, 121)"
 msapplication_tile_image: "https://kura.pro/dtt/images/logos/dtt.webp"
 
 # Twitter Card - The Twitter Card front matter (YAML).

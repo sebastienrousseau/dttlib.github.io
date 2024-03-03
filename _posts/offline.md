@@ -42,7 +42,7 @@ robots: "index, follow"
 short_name: "dtt"
 subtitle: "Check your connection and try again."
 tags: ""
-theme_color: "rgb(205,53,44)"
+theme_color: "rgb(255, 117, 121)"
 title: "No Internet Connection detected. Please try again later."
 url: "https://dttlib.one/offline/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -52,7 +52,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://dttlib.one/offline/rss.xml"
 category: "Rust, DateTime, Parsing, Formatting, Validation, Software, Integration, Performance, Development, Timezones"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.20)"
+generator: "Shokunin SSG (version 0.0.26)"
 item_description: "I apologise for the inconvenience. To continue, please connect to a Wi-Fi network or enable cellular data"
 item_guid: "https://dttlib.one/offline/rss.xml"
 item_link: "https://dttlib.one/offline/rss.xml"
@@ -77,7 +77,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(205,53,44)"
+msapplication-navbutton-color: "rgb(255, 117, 121)"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
