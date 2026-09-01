@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "DTT Lib — Date, Time & Timezone Utilities for Rust",
+  "date": "2026-09-01",
+  "description": "Detailed breakdown of DTT Lib's memory safety, zero-copy parsing, and timezone calculation engine.",
+  "keywords": "dttlib features, zero allocation datetime, fast timezone rust",
+  "language": "en-GB",
+  "layout": "page",
+  "logo": "https://cloudcdn.pro/dtt/v1/logos/dtt.svg",
+  "name": "DTT Lib",
+  "permalink": "https://dttlib.com/features/index.html",
+  "reading_time": 1,
+  "short_name": "dttlib",
+  "title": "Core Features: Sub-Nanosecond Parsing & Timezones",
+  "word_count": 104
+}

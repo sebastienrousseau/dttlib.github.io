@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "DTT Lib — Date, Time & Timezone Utilities for Rust",
+  "date": "2026-09-01",
+  "description": "High-performance date, time, and timezone manipulation library for Rust with zero heap allocations, sub-nanosecond precision, and full ISO 8601/RFC 3339 compliance.",
+  "keywords": "dttlib, rust datetime, date time timezone rust, ISO 8601 rust, zero allocation datetime",
+  "language": "en-GB",
+  "layout": "index",
+  "logo": "https://cloudcdn.pro/dtt/v1/logos/dtt.svg",
+  "name": "DTT Lib",
+  "permalink": "https://dttlib.com/",
+  "reading_time": 3,
+  "short_name": "dttlib",
+  "title": "DTT Lib: Deterministic Date, Time & Timezone Engine in Rust",
+  "word_count": 726
+}

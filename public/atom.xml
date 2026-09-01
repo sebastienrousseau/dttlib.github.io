@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MySsgSite</title>
+  <link href="http://127.0.0.1:8000/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://127.0.0.1:8000"/>
+  <id>http://127.0.0.1:8000</id>
+  <updated></updated>
+  <entry>
+    <title>Page Not Found (404) | DTT Lib</title>
+    <link href="http://127.0.0.1:8000/404/"/>
+    <id>http://127.0.0.1:8000/404/</id>
+    <updated></updated>
+    <published></published>
+    <summary>The requested documentation page could not be found.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>About Sebastien Rousseau &amp; DTT Lib</title>
+    <link href="http://127.0.0.1:8000/about/"/>
+    <id>http://127.0.0.1:8000/about/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Background and credentials of Sebastien Rousseau, creator of DTT Lib and financial systems architect.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Accessibility Statement: WCAG 2.2 Level AAA Compliance</title>
+    <link href="http://127.0.0.1:8000/accessibility/"/>
+    <id>http://127.0.0.1:8000/accessibility/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Accessibility statement declaring WCAG 2.2 Level AAA compliance.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Internal Architecture: Zero Allocations &amp; Memory Model</title>
+    <link href="http://127.0.0.1:8000/architecture/"/>
+    <id>http://127.0.0.1:8000/architecture/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Architectural overview of DTT Lib&apos;s bit-packed representations and math formulas.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Performance Benchmarks: DTT Lib vs Chrono &amp; Time</title>
+    <link href="http://127.0.0.1:8000/benchmarks/"/>
+    <id>http://127.0.0.1:8000/benchmarks/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Empirical benchmarks measuring parse throughput and serialization latency across 1,000,000 dates.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Changelog &amp; Version History</title>
+    <link href="http://127.0.0.1:8000/changelog/"/>
+    <id>http://127.0.0.1:8000/changelog/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Release notes for DTT Lib starting at v0.0.1.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Contact &amp; Enterprise Inquiries</title>
+    <link href="http://127.0.0.1:8000/contact/"/>
+    <id>http://127.0.0.1:8000/contact/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Get in touch regarding DTT Lib integration.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Contributing to DTT Lib</title>
+    <link href="http://127.0.0.1:8000/contributing/"/>
+    <id>http://127.0.0.1:8000/contributing/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Guidelines for contributing to DTT Lib.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>API Reference &amp; DateTime Struct Reference</title>
+    <link href="http://127.0.0.1:8000/documentation/"/>
+    <id>http://127.0.0.1:8000/documentation/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Comprehensive Rust API documentation for DateTime, TimeZone, Date, and Time structs.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Financial Timestamping &amp; Microservice Examples</title>
+    <link href="http://127.0.0.1:8000/examples/"/>
+    <id>http://127.0.0.1:8000/examples/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Real-world code examples using DTT Lib for high-frequency trading and ISO 20022 message timestamps.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Frequently Asked Questions (FAQ): DTT Lib</title>
+    <link href="http://127.0.0.1:8000/faqs/"/>
+    <id>http://127.0.0.1:8000/faqs/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Answers to common questions about DTT Lib temporal calculations, leap seconds, and license.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Core Features: Sub-Nanosecond Parsing &amp; Timezones</title>
+    <link href="http://127.0.0.1:8000/features/"/>
+    <id>http://127.0.0.1:8000/features/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Detailed breakdown of DTT Lib&apos;s memory safety, zero-copy parsing, and timezone calculation engine.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Supported Date &amp; Time Formats: ISO 8601, RFC 3339 &amp; RFC 2822</title>
+    <link href="http://127.0.0.1:8000/formats/"/>
+    <id>http://127.0.0.1:8000/formats/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Complete reference for all temporal formatting and parsing standards supported by DTT Lib.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Getting Started with DTT Lib: Installation &amp; Quickstart</title>
+    <link href="http://127.0.0.1:8000/getting-started/"/>
+    <id>http://127.0.0.1:8000/getting-started/</id>
+    <updated></updated>
+    <published></published>
+    <summary>How to install DTT Lib via Cargo and perform high-speed date, time, and timezone operations.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Made with Static Site Generator (SSG)</title>
+    <link href="http://127.0.0.1:8000/made-with-ssg/"/>
+    <id>http://127.0.0.1:8000/made-with-ssg/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Details on native Rust static site generation.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Offline Access: DTT Lib</title>
+    <link href="http://127.0.0.1:8000/offline/"/>
+    <id>http://127.0.0.1:8000/offline/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Service worker offline fallback page.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Privacy Policy: Zero-Telemetry Architecture</title>
+    <link href="http://127.0.0.1:8000/privacy/"/>
+    <id>http://127.0.0.1:8000/privacy/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Privacy policy declaring zero tracking cookies and completely local computation.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Security Architecture: Memory Safety &amp; Zero Telemetry</title>
+    <link href="http://127.0.0.1:8000/security/"/>
+    <id>http://127.0.0.1:8000/security/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Security guarantees, zero runtime telemetry, and CycloneDX SBOM provenance.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Terms of Use &amp; Open Source License</title>
+    <link href="http://127.0.0.1:8000/terms/"/>
+    <id>http://127.0.0.1:8000/terms/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Terms governing DTT Lib under Apache-2.0 and MIT licenses.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Thank You | DTT Lib</title>
+    <link href="http://127.0.0.1:8000/thanks/"/>
+    <id>http://127.0.0.1:8000/thanks/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Thank you for your message.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+</feed>

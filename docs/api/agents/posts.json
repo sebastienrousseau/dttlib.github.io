@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-09-01",
+    "description": "Background and credentials of Sebastien Rousseau, creator of DTT Lib and financial systems architect.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "About Sebastien Rousseau & DTT Lib",
+    "url": "http://127.0.0.1:8000/about/",
+    "wordCount": 57
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Accessibility statement declaring WCAG 2.2 Level AAA compliance.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Accessibility Statement: WCAG 2.2 Level AAA Compliance",
+    "url": "http://127.0.0.1:8000/accessibility/",
+    "wordCount": 26
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Architectural overview of DTT Lib's bit-packed representations and math formulas.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Internal Architecture: Zero Allocations & Memory Model",
+    "url": "http://127.0.0.1:8000/architecture/",
+    "wordCount": 77
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Empirical benchmarks measuring parse throughput and serialization latency across 1,000,000 dates.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Performance Benchmarks: DTT Lib vs Chrono & Time",
+    "url": "http://127.0.0.1:8000/benchmarks/",
+    "wordCount": 67
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Release notes for DTT Lib starting at v0.0.1.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Changelog & Version History",
+    "url": "http://127.0.0.1:8000/changelog/",
+    "wordCount": 55
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Get in touch regarding DTT Lib integration.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Contact & Enterprise Inquiries",
+    "url": "http://127.0.0.1:8000/contact/",
+    "wordCount": 75
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Guidelines for contributing to DTT Lib.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Contributing to DTT Lib",
+    "url": "http://127.0.0.1:8000/contributing/",
+    "wordCount": 14
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Comprehensive Rust API documentation for DateTime, TimeZone, Date, and Time structs.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "API Reference & DateTime Struct Reference",
+    "url": "http://127.0.0.1:8000/documentation/",
+    "wordCount": 82
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Real-world code examples using DTT Lib for high-frequency trading and ISO 20022 message timestamps.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Financial Timestamping & Microservice Examples",
+    "url": "http://127.0.0.1:8000/examples/",
+    "wordCount": 25
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Answers to common questions about DTT Lib temporal calculations, leap seconds, and license.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Frequently Asked Questions (FAQ): DTT Lib",
+    "url": "http://127.0.0.1:8000/faqs/",
+    "wordCount": 150
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Detailed breakdown of DTT Lib's memory safety, zero-copy parsing, and timezone calculation engine.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Core Features: Sub-Nanosecond Parsing & Timezones",
+    "url": "http://127.0.0.1:8000/features/",
+    "wordCount": 104
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Complete reference for all temporal formatting and parsing standards supported by DTT Lib.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Supported Date & Time Formats: ISO 8601, RFC 3339 & RFC 2822",
+    "url": "http://127.0.0.1:8000/formats/",
+    "wordCount": 67
+  },
+  {
+    "date": "2026-09-01",
+    "description": "How to install DTT Lib via Cargo and perform high-speed date, time, and timezone operations.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Getting Started with DTT Lib: Installation & Quickstart",
+    "url": "http://127.0.0.1:8000/getting-started/",
+    "wordCount": 57
+  },
+  {
+    "date": "2026-09-01",
+    "description": "High-performance date, time, and timezone manipulation library for Rust with zero heap allocations, sub-nanosecond precision, and full ISO 8601/RFC 3339 compliance.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "DTT Lib: Deterministic Date, Time & Timezone Engine in Rust",
+    "url": "http://127.0.0.1:8000/index.html",
+    "wordCount": 726
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Details on native Rust static site generation.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Made with Static Site Generator (SSG)",
+    "url": "http://127.0.0.1:8000/made-with-ssg/",
+    "wordCount": 22
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Service worker offline fallback page.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Offline Access: DTT Lib",
+    "url": "http://127.0.0.1:8000/offline/",
+    "wordCount": 14
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Privacy policy declaring zero tracking cookies and completely local computation.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Privacy Policy: Zero-Telemetry Architecture",
+    "url": "http://127.0.0.1:8000/privacy/",
+    "wordCount": 20
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Security guarantees, zero runtime telemetry, and CycloneDX SBOM provenance.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Security Architecture: Memory Safety & Zero Telemetry",
+    "url": "http://127.0.0.1:8000/security/",
+    "wordCount": 55
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Terms governing DTT Lib under Apache-2.0 and MIT licenses.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Terms of Use & Open Source License",
+    "url": "http://127.0.0.1:8000/terms/",
+    "wordCount": 16
+  },
+  {
+    "date": "2026-09-01",
+    "description": "Thank you for your message.",
+    "locale": "en-GB",
+    "tags": [],
+    "title": "Thank You | DTT Lib",
+    "url": "http://127.0.0.1:8000/thanks/",
+    "wordCount": 26
+  }
+]

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://dttlib.com/examples/index.html/sitemap.xml

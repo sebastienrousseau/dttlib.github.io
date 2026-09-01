@@ -1,0 +1,20 @@
+# Generated site-level configuration for dttlib.github.io
+site_name = "DTT Lib"
+site_title = "DTT Lib | Date, Time & Timezone Utilities for Rust"
+site_description = "High-performance date and time operations, RFC compliance, and microsecond parsing for Rust applications."
+base_url = "https://dttlib.com"
+language = "en-GB"
+
+content_dir = "_posts"
+template_dir = "_layouts"
+output_dir = "docs"
+
+[agents]
+agents_txt = true
+ai_plugin = true
+
+[agents.mcp]
+enabled = true
+
+[edge_headers]
+targets = ["netlify", "cloudflare", "vercel"]

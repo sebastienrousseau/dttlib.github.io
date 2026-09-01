@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "DTT Lib — Date, Time & Timezone Utilities for Rust",
+  "date": "2026-09-01",
+  "description": "Release notes for DTT Lib starting at v0.0.1.",
+  "keywords": "dttlib changelog, version history",
+  "language": "en-GB",
+  "layout": "page",
+  "logo": "https://cloudcdn.pro/dtt/v1/logos/dtt.svg",
+  "name": "DTT Lib",
+  "permalink": "https://dttlib.com/changelog/index.html",
+  "reading_time": 1,
+  "short_name": "dttlib",
+  "title": "Changelog & Version History",
+  "word_count": 55
+}

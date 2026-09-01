@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Detailed breakdown of DTT Lib's memory safety, zero-copy parsing, and timezone calculation engine.",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "DTT Lib",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "dttlib",
+  "start_url": ".",
+  "theme_color": null
+}
