@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://dttlib.com/offline/index.html/sitemap.xml

@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "DTT Lib — Date, Time & Timezone Utilities for Rust",
+  "date": "2026-09-01",
+  "description": "How to install DTT Lib via Cargo and perform high-speed date, time, and timezone operations.",
+  "keywords": "install dttlib, cargo dtt, rust datetime quickstart",
+  "language": "en-GB",
+  "layout": "page",
+  "logo": "https://cloudcdn.pro/dtt/v1/logos/dtt.svg",
+  "name": "DTT Lib",
+  "permalink": "https://dttlib.com/getting-started/index.html",
+  "reading_time": 1,
+  "short_name": "dttlib",
+  "title": "Getting Started with DTT Lib: Installation & Quickstart",
+  "word_count": 57
+}

@@ -1,0 +1,14 @@
+# DTT Lib
+> Deterministic date, time, and timezone manipulation library for Rust with zero heap allocations, sub-nanosecond precision, and full ISO 8601/RFC 3339 compliance.
+
+## Core Documentation & Resources
+- Homepage: https://dttlib.com/
+- Getting Started: https://dttlib.com/getting-started/index.html
+- Formats & ISO: https://dttlib.com/formats/index.html
+- Features: https://dttlib.com/features/index.html
+- API Reference: https://dttlib.com/documentation/index.html
+- Examples: https://dttlib.com/examples/index.html
+- Benchmarks: https://dttlib.com/benchmarks/index.html
+- Architecture: https://dttlib.com/architecture/index.html
+- Security: https://dttlib.com/security/index.html
+- About Sebastien Rousseau: https://dttlib.com/about/index.html

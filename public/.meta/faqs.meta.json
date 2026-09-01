@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "DTT Lib — Date, Time & Timezone Utilities for Rust",
+  "date": "2026-09-01",
+  "description": "Answers to common questions about DTT Lib temporal calculations, leap seconds, and license.",
+  "keywords": "dttlib FAQ, rust datetime questions",
+  "language": "en-GB",
+  "layout": "faqs",
+  "logo": "https://cloudcdn.pro/dtt/v1/logos/dtt.svg",
+  "name": "DTT Lib",
+  "permalink": "https://dttlib.com/faqs/index.html",
+  "reading_time": 1,
+  "short_name": "dttlib",
+  "title": "Frequently Asked Questions (FAQ): DTT Lib",
+  "word_count": 150
+}

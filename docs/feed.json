@@ -1,0 +1,309 @@
+{
+  "feed_url": "http://127.0.0.1:8000/feed.json",
+  "home_page_url": "http://127.0.0.1:8000/",
+  "items": [
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "The requested documentation page could not be found.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/404/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Page Not Found (404) | DTT Lib",
+      "url": "http://127.0.0.1:8000/404/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Background and credentials of Sebastien Rousseau, creator of DTT Lib and financial systems architect.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/about/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "About Sebastien Rousseau & DTT Lib",
+      "url": "http://127.0.0.1:8000/about/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Accessibility statement declaring WCAG 2.2 Level AAA compliance.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/accessibility/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Accessibility Statement: WCAG 2.2 Level AAA Compliance",
+      "url": "http://127.0.0.1:8000/accessibility/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Architectural overview of DTT Lib's bit-packed representations and math formulas.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/architecture/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Internal Architecture: Zero Allocations & Memory Model",
+      "url": "http://127.0.0.1:8000/architecture/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Empirical benchmarks measuring parse throughput and serialization latency across 1,000,000 dates.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/benchmarks/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Performance Benchmarks: DTT Lib vs Chrono & Time",
+      "url": "http://127.0.0.1:8000/benchmarks/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Release notes for DTT Lib starting at v0.0.1.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/changelog/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Changelog & Version History",
+      "url": "http://127.0.0.1:8000/changelog/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Get in touch regarding DTT Lib integration.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/contact/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Contact & Enterprise Inquiries",
+      "url": "http://127.0.0.1:8000/contact/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Guidelines for contributing to DTT Lib.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/contributing/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Contributing to DTT Lib",
+      "url": "http://127.0.0.1:8000/contributing/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Comprehensive Rust API documentation for DateTime, TimeZone, Date, and Time structs.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/documentation/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "API Reference & DateTime Struct Reference",
+      "url": "http://127.0.0.1:8000/documentation/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Real-world code examples using DTT Lib for high-frequency trading and ISO 20022 message timestamps.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/examples/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Financial Timestamping & Microservice Examples",
+      "url": "http://127.0.0.1:8000/examples/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Answers to common questions about DTT Lib temporal calculations, leap seconds, and license.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/faqs/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Frequently Asked Questions (FAQ): DTT Lib",
+      "url": "http://127.0.0.1:8000/faqs/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Detailed breakdown of DTT Lib's memory safety, zero-copy parsing, and timezone calculation engine.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/features/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Core Features: Sub-Nanosecond Parsing & Timezones",
+      "url": "http://127.0.0.1:8000/features/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Complete reference for all temporal formatting and parsing standards supported by DTT Lib.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/formats/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Supported Date & Time Formats: ISO 8601, RFC 3339 & RFC 2822",
+      "url": "http://127.0.0.1:8000/formats/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "How to install DTT Lib via Cargo and perform high-speed date, time, and timezone operations.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/getting-started/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Getting Started with DTT Lib: Installation & Quickstart",
+      "url": "http://127.0.0.1:8000/getting-started/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Details on native Rust static site generation.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/made-with-ssg/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Made with Static Site Generator (SSG)",
+      "url": "http://127.0.0.1:8000/made-with-ssg/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Service worker offline fallback page.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/offline/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Offline Access: DTT Lib",
+      "url": "http://127.0.0.1:8000/offline/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Privacy policy declaring zero tracking cookies and completely local computation.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/privacy/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Privacy Policy: Zero-Telemetry Architecture",
+      "url": "http://127.0.0.1:8000/privacy/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Security guarantees, zero runtime telemetry, and CycloneDX SBOM provenance.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/security/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Security Architecture: Memory Safety & Zero Telemetry",
+      "url": "http://127.0.0.1:8000/security/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Terms governing DTT Lib under Apache-2.0 and MIT licenses.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/terms/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Terms of Use & Open Source License",
+      "url": "http://127.0.0.1:8000/terms/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Thank you for your message.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/thanks/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Thank You | DTT Lib",
+      "url": "http://127.0.0.1:8000/thanks/"
+    }
+  ],
+  "language": "en-GB",
+  "title": "MySsgSite",
+  "version": "https://jsonfeed.org/version/1.1"
+}

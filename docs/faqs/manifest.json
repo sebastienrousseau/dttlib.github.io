@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Answers to common questions about DTT Lib temporal calculations, leap seconds, and license.",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "DTT Lib",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "dttlib",
+  "start_url": ".",
+  "theme_color": null
+}
