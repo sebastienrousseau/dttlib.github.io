@@ -1,0 +1,18 @@
+{
+  "api": {
+    "is_user_authenticated": false,
+    "type": "openapi",
+    "url": "https://dttlib.com/openapi.yaml"
+  },
+  "auth": {
+    "type": "none"
+  },
+  "contact_email": "support@dttlib.com",
+  "description_for_human": "High-performance date and time operations, RFC compliance, and microsecond parsing for Rust applications.",
+  "description_for_model": "High-performance date and time operations, RFC compliance, and microsecond parsing for Rust applications.",
+  "legal_info_url": "https://dttlib.com/legal",
+  "logo_url": "https://dttlib.com/favicon.ico",
+  "name_for_human": "DTT Lib | Date, Time & Timezone Utilities for Rust",
+  "name_for_model": "dtt_lib",
+  "schema_version": "v1"
+}
