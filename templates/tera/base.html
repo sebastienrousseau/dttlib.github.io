@@ -3294,6 +3294,30 @@ select::picker(select) {
       setTimeout(() => input && input.focus(), 50);
     }
 
+    // Render a search message or result with DOM text nodes, never as
+    // HTML: the query and the index entries are both untrusted text.
+    function searchMessage(text) {
+      var div = document.createElement('div');
+      div.className = 'search-empty';
+      div.textContent = text;
+      return div;
+    }
+
+    function searchItem(item) {
+      var link = document.createElement('a');
+      var url = String(item.url || '');
+      link.className = 'search-item';
+      link.href = url.charAt(0) === '/' && url.charAt(1) !== '/' ? url : '/';
+      var title = document.createElement('div');
+      title.className = 'search-item-title';
+      title.textContent = item.title || '';
+      var desc = document.createElement('div');
+      desc.className = 'search-item-desc';
+      desc.textContent = String(item.description || item.content || '').slice(0, 140) + '...';
+      link.append(title, desc);
+      return link;
+    }
+
     function closeSearch() {
       if (!modal) return;
       modal.style.display = 'none';
@@ -3330,16 +3354,11 @@ select::picker(select) {
         ).slice(0, 8);
 
         if (matches.length === 0) {
-          results.innerHTML = '<div class="search-empty">No results found for "' + query + '"</div>';
+          results.replaceChildren(searchMessage('No results found for "' + query + '"'));
           return;
         }
 
-        results.innerHTML = matches.map(item => `
-          <a class="search-item" href="${item.url}">
-            <div class="search-item-title">${item.title}</div>
-            <div class="search-item-desc">${item.description || item.content || ''}</div>
-          </a>
-        `).join('');
+        results.replaceChildren.apply(results, matches.map(searchItem));
       });
     }
   });

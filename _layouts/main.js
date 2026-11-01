@@ -117,13 +117,28 @@
     var results = document.getElementById('searchResults');
     var closeBtn = document.getElementById('searchClose');
 
-    function escapeHtml(str) {
-      if (!str) return '';
-      return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
+    // Render a search message or result with DOM text nodes, never as
+    // HTML: the query and the index entries are both untrusted text.
+    function searchMessage(text) {
+      var div = document.createElement('div');
+      div.className = 'search-empty';
+      div.textContent = text;
+      return div;
+    }
+
+    function searchItem(item) {
+      var link = document.createElement('a');
+      var url = String(item.url || '');
+      link.className = 'search-item';
+      link.href = url.charAt(0) === '/' && url.charAt(1) !== '/' ? url : '/';
+      var title = document.createElement('div');
+      title.className = 'search-item-title';
+      title.textContent = item.title || '';
+      var desc = document.createElement('div');
+      desc.className = 'search-item-desc';
+      desc.textContent = String(item.description || item.content || '').slice(0, 140) + '...';
+      link.append(title, desc);
+      return link;
     }
 
     async function loadSearch() {
@@ -203,7 +218,7 @@
           return;
         }
         if (searchIndex.length === 0) {
-          results.innerHTML = '<div class="search-empty">No results found for "' + escapeHtml(query) + '"</div>';
+          results.replaceChildren(searchMessage('No results found for "' + query + '"'));
           return;
         }
 
@@ -220,16 +235,11 @@
         }).slice(0, 10);
 
         if (matches.length === 0) {
-          results.innerHTML = '<div class="search-empty">No results found for "' + escapeHtml(query) + '"</div>';
+          results.replaceChildren(searchMessage('No results found for "' + query + '"'));
           return;
         }
 
-        results.innerHTML = matches.map(function (item) {
-          return '<a class="search-item" href="' + item.url + '">' +
-            '<div class="search-item-title">' + escapeHtml(item.title) + '</div>' +
-            '<div class="search-item-desc">' + escapeHtml((item.description || item.content || '').replace(/<[^>]+>/g, '').slice(0, 140)) + '...</div>' +
-            '</a>';
-        }).join('');
+        results.replaceChildren.apply(results, matches.map(searchItem));
       });
     }
   }
