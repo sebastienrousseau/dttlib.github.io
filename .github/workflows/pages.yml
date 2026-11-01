@@ -1,0 +1,92 @@
+# Builds https://dttlib.com with the latest ssg and deploys it to GitHub
+# Pages with GitHub Actions (AGENTS.md sections 1.9 and 7.1.3).
+#
+# The Pages source is already "GitHub Actions", but no workflow deployed
+# it, so the live site stayed on the 2026-09-01 deployment, with a
+# sitemap of /<page>/index.html URLs that the pages' own canonical links
+# contradict.
+#
+# `make build` runs ssg into public/ and scripts/post-build.py, which
+# mirrors it into docs/ and writes sitemap.xml from each page's
+# canonical link. The same checks ci.yml runs on the committed docs/
+# run here on the fresh build. Pull requests build and check; only a
+# push to main (or a manual run on main) deploys.
+#
+# SSG_VERSION names the latest ssg release; move it up when a newer one
+# ships.
+
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  SSG_VERSION: 0.0.72
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@e2a55d2ffb04f378e9626c28d38b36d230d1e12f # master
+        with:
+          toolchain: stable
+      - name: Install ssg
+        run: cargo install ssg --version "$SSG_VERSION" --locked
+      - name: Build
+        run: |
+          ssg --version
+          make build
+      - name: HTML validation
+        run: npx --yes html-validate@10 "docs/**/*.html"
+      - name: Regression and contrast audits
+        run: make audit
+      - name: Sitemap lists canonical URLs only
+        run: |
+          set -euo pipefail
+          grep -o '<loc>[^<]*' docs/sitemap.xml | sed 's/<loc>//' > locs.txt
+          test -s locs.txt
+          if grep -E 'index\.html$|/404/$|/offline/$' locs.txt; then
+            echo "::error::sitemap.xml lists a non-canonical or utility URL"
+            exit 1
+          fi
+          wc -l < locs.txt
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: docs
+
+  deploy:
+    name: Deploy
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
