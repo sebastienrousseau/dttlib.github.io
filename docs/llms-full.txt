@@ -1,5 +1,5 @@
-# MySsgSite
+# DTT Lib
 
-> A site built with SSG
+> High-performance date and time operations, RFC compliance, and microsecond parsing for Rust applications.
 
 Language: en-GB

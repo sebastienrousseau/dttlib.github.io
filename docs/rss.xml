@@ -4,184 +4,184 @@
     <title>DTT Lib: Deterministic Date, Time &amp; Timezone Engine in Rust</title>
     <link>https://dttlib.com/</link>
     <description>High-performance date, time, and timezone manipulation library for Rust with zero heap allocations, sub-nanosecond precision, and full ISO 8601/RFC 3339 compliance.</description>
-    <atom:link href="http://127.0.0.1:8000/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://dttlib.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
     <item>
       <title>API Reference & DateTime Struct Reference</title>
-      <link>http://127.0.0.1:8000/documentation/</link>
+      <link>https://dttlib.com/documentation/</link>
       <description>Comprehensive Rust API documentation for DateTime, TimeZone, Date, and Time structs.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/documentation/</guid>
+      <guid isPermaLink="true">https://dttlib.com/documentation/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>About Sebastien Rousseau & DTT Lib</title>
-      <link>http://127.0.0.1:8000/about/</link>
+      <link>https://dttlib.com/about/</link>
       <description>Background and credentials of Sebastien Rousseau, creator of DTT Lib and financial systems architect.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/about/</guid>
+      <guid isPermaLink="true">https://dttlib.com/about/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Accessibility Statement: WCAG 2.2 Level AAA Compliance</title>
-      <link>http://127.0.0.1:8000/accessibility/</link>
+      <link>https://dttlib.com/accessibility/</link>
       <description>Accessibility statement declaring WCAG 2.2 Level AAA compliance.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/accessibility/</guid>
+      <guid isPermaLink="true">https://dttlib.com/accessibility/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Changelog & Version History</title>
-      <link>http://127.0.0.1:8000/changelog/</link>
+      <link>https://dttlib.com/changelog/</link>
       <description>Release notes for DTT Lib starting at v0.0.1.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/changelog/</guid>
+      <guid isPermaLink="true">https://dttlib.com/changelog/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Contact & Enterprise Inquiries</title>
-      <link>http://127.0.0.1:8000/contact/</link>
+      <link>https://dttlib.com/contact/</link>
       <description>Get in touch regarding DTT Lib integration.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/contact/</guid>
+      <guid isPermaLink="true">https://dttlib.com/contact/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Contributing to DTT Lib</title>
-      <link>http://127.0.0.1:8000/contributing/</link>
+      <link>https://dttlib.com/contributing/</link>
       <description>Guidelines for contributing to DTT Lib.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/contributing/</guid>
+      <guid isPermaLink="true">https://dttlib.com/contributing/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Core Features: Sub-Nanosecond Parsing & Timezones</title>
-      <link>http://127.0.0.1:8000/features/</link>
+      <link>https://dttlib.com/features/</link>
       <description>Detailed breakdown of DTT Lib&apos;s memory safety, zero-copy parsing, and timezone calculation engine.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/features/</guid>
+      <guid isPermaLink="true">https://dttlib.com/features/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Financial Timestamping & Microservice Examples</title>
-      <link>http://127.0.0.1:8000/examples/</link>
+      <link>https://dttlib.com/examples/</link>
       <description>Real-world code examples using DTT Lib for high-frequency trading and ISO 20022 message timestamps.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/examples/</guid>
+      <guid isPermaLink="true">https://dttlib.com/examples/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Frequently Asked Questions (FAQ): DTT Lib</title>
-      <link>http://127.0.0.1:8000/faqs/</link>
+      <link>https://dttlib.com/faqs/</link>
       <description>Answers to common questions about DTT Lib temporal calculations, leap seconds, and license.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/faqs/</guid>
+      <guid isPermaLink="true">https://dttlib.com/faqs/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Getting Started with DTT Lib: Installation & Quickstart</title>
-      <link>http://127.0.0.1:8000/getting-started/</link>
+      <link>https://dttlib.com/getting-started/</link>
       <description>How to install DTT Lib via Cargo and perform high-speed date, time, and timezone operations.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/getting-started/</guid>
+      <guid isPermaLink="true">https://dttlib.com/getting-started/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Internal Architecture: Zero Allocations & Memory Model</title>
-      <link>http://127.0.0.1:8000/architecture/</link>
+      <link>https://dttlib.com/architecture/</link>
       <description>Architectural overview of DTT Lib&apos;s bit-packed representations and math formulas.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/architecture/</guid>
+      <guid isPermaLink="true">https://dttlib.com/architecture/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Made with Static Site Generator (SSG)</title>
-      <link>http://127.0.0.1:8000/made-with-ssg/</link>
+      <link>https://dttlib.com/made-with-ssg/</link>
       <description>Details on native Rust static site generation.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/made-with-ssg/</guid>
+      <guid isPermaLink="true">https://dttlib.com/made-with-ssg/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Offline Access: DTT Lib</title>
-      <link>http://127.0.0.1:8000/offline/</link>
+      <link>https://dttlib.com/offline/</link>
       <description>Service worker offline fallback page.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/offline/</guid>
+      <guid isPermaLink="true">https://dttlib.com/offline/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Page Not Found (404) | DTT Lib</title>
-      <link>http://127.0.0.1:8000/404/</link>
+      <link>https://dttlib.com/404/</link>
       <description>The requested documentation page could not be found.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/404/</guid>
+      <guid isPermaLink="true">https://dttlib.com/404/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Performance Benchmarks: DTT Lib vs Chrono & Time</title>
-      <link>http://127.0.0.1:8000/benchmarks/</link>
+      <link>https://dttlib.com/benchmarks/</link>
       <description>Empirical benchmarks measuring parse throughput and serialization latency across 1,000,000 dates.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/benchmarks/</guid>
+      <guid isPermaLink="true">https://dttlib.com/benchmarks/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Privacy Policy: Zero-Telemetry Architecture</title>
-      <link>http://127.0.0.1:8000/privacy/</link>
+      <link>https://dttlib.com/privacy/</link>
       <description>Privacy policy declaring zero tracking cookies and completely local computation.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/privacy/</guid>
+      <guid isPermaLink="true">https://dttlib.com/privacy/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Security Architecture: Memory Safety & Zero Telemetry</title>
-      <link>http://127.0.0.1:8000/security/</link>
+      <link>https://dttlib.com/security/</link>
       <description>Security guarantees, zero runtime telemetry, and CycloneDX SBOM provenance.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/security/</guid>
+      <guid isPermaLink="true">https://dttlib.com/security/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Supported Date & Time Formats: ISO 8601, RFC 3339 & RFC 2822</title>
-      <link>http://127.0.0.1:8000/formats/</link>
+      <link>https://dttlib.com/formats/</link>
       <description>Complete reference for all temporal formatting and parsing standards supported by DTT Lib.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/formats/</guid>
+      <guid isPermaLink="true">https://dttlib.com/formats/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Terms of Use & Open Source License</title>
-      <link>http://127.0.0.1:8000/terms/</link>
+      <link>https://dttlib.com/terms/</link>
       <description>Terms governing DTT Lib under Apache-2.0 and MIT licenses.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/terms/</guid>
+      <guid isPermaLink="true">https://dttlib.com/terms/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
     </item>
     <item>
       <title>Thank You | DTT Lib</title>
-      <link>http://127.0.0.1:8000/thanks/</link>
+      <link>https://dttlib.com/thanks/</link>
       <description>Thank you for your message.</description>
-      <guid isPermaLink="true">http://127.0.0.1:8000/thanks/</guid>
+      <guid isPermaLink="true">https://dttlib.com/thanks/</guid>
       <pubDate></pubDate>
       <author>Sebastien Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
